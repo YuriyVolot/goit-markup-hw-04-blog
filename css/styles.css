@@ -57,9 +57,16 @@ body {
   text-transform: uppercase;
 }
 
+.navigation:not(:last-child) {
+  margin-right: auto;
+  text-decoration: none;
+}
+
 .nav-link {
   color: var(--text-color);
   text-decoration: none;
+  display: block;
+  padding: 0 40;
 }
 
 .nav-link:hover,
@@ -76,21 +83,65 @@ body {
 .tittle {
   font-size: 30px;
   font-weight: 400px;
+  margin-top: 0px;
+  margin-bottom: 33px;
   color: var(--text-color);
 }
 
-.features container {
+.features {
+  /*background-color: turquoise;*/
   font-family: var(--primary-font);
+  margin-bottom: 70px;
 }
-
+.features .signature {
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
 .features-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 59px;
+  margin-top: 0;
+  padding-left: 0;
 }
 
+.features-list-item {
+  width: 420px;
+  margin-bottom: 134px;
+}
+
+.features-list-item:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+.features-list-item: :nth-last-child(-n+2) {
+  margin-bottom: 0px;
+}
+
+.image {
+  margin-bottom: 30px;
+}
 /*button*/
 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 165px;
+  height: 50px;
+  border: 1px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: inherit;
   color: var(--text-color);
   font-size: 20px;
   line-height: var(--text-leading);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--white-color);
 }
