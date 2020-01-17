@@ -38,8 +38,8 @@ body {
 }
 
 .page-header {
-  margin-top: 77px;
-  margin-bottom: 102px;
+  padding-top: 77px;
+  padding-bottom: 102px;
 }
 
 /* SITE-NAV */
@@ -47,8 +47,6 @@ body {
 .site-nav {
   display: flex;
   justify-content: center;
-  margin-left: 165px;
-  margin-right: 165px;
 }
 .site-nav {
   font-size: var(--text-size);
@@ -66,7 +64,6 @@ body {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  padding: 0 40;
 }
 
 .nav-link:hover,
@@ -87,14 +84,18 @@ body {
   margin-bottom: 33px;
   color: var(--text-color);
 }
+.about {
+  margin: 0;
+}
 
 .features {
   /*background-color: turquoise;*/
   font-family: var(--primary-font);
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 .features .signature {
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 31px;
 }
 .features-list {
@@ -110,12 +111,12 @@ body {
   width: 420px;
   margin-bottom: 134px;
 }
+.features-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
 
 .features-list-item:not(:nth-child(2n)) {
   margin-right: 60px;
-}
-.features-list-item: :nth-last-child(-n+2) {
-  margin-bottom: 0px;
 }
 
 .image {
