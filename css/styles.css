@@ -64,6 +64,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   display: block;
+  margin: 40px;
 }
 
 .nav-link:hover,
