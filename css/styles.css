@@ -64,7 +64,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   display: block;
-  margin: 40px;
+  padding: 40px;
 }
 
 .nav-link:hover,
@@ -124,7 +124,7 @@ body {
   margin-bottom: 30px;
 }
 /*button*/
-button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
